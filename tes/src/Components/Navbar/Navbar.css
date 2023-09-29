@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  box-shadow: 1px 1px 7px 2px rgb(207, 207, 207);
+}
+
+.logo {
+  background-color: rgb(40, 176, 255);
+  color: #ffff;
+  padding: 10px 120px;
+}
+
+nav {
+  background-color: #ffff;
+  padding: 0px 100px;
+  height: 44px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(105, 105, 105);
+}
+
+nav a:hover {
+  color: rgb(40, 176, 255);
+  border-bottom: 3px solid rgb(40, 176, 255);
+}

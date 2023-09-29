@@ -1,0 +1,96 @@
+.invoice {
+  min-width: 400px;
+  padding: 20px;
+  box-shadow: 1px 1px 4px 1px rgb(212, 212, 212);
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.invoiceHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.invoiceHeader img {
+  width: 50px;
+}
+
+.invoiceHeader p {
+  font-size: 1.4em;
+  margin-left: 5px;
+}
+
+.invoiceItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item p {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.itemImg {
+  display: flex;
+  width: 100px;
+  align-items: center;
+}
+
+.itemImg img {
+  width: 100%;
+}
+
+.btn {
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 1px 1px 4px 1px #d4d4d4;
+}
+
+.btn-cart {
+  background-color: rgb(255, 81, 81);
+  color: white;
+  border: 1px solid hsl(0, 100%, 66%);
+  width: 100%;
+}
+
+.btn-cart:hover {
+  background-color: white;
+  color: #ff5151;
+  border: 1px solid #ff5151;
+}
+
+.btn-saveBill {
+  background-color: #4db652;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.btn-saveBill:hover {
+  background-color: white;
+  color: #4db652;
+  border: 1px solid #4db652;
+}
+
+.btn-charge {
+  background-color: #28b0ff;
+  color: white;
+  width: 100%;
+}
+.btn-charge:hover {
+  background-color: white;
+  color: #28b0ff;
+  border: 1px solid #28b0ff;
+}

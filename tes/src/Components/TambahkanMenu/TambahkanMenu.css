@@ -1,0 +1,31 @@
+.tambahkanMenu {
+  padding: 0 100px;
+}
+
+.formTitle {
+  color: #28b0ff;
+}
+.formFotoMenu {
+  padding: 100px;
+  background-color: #e7e7e7;
+  border: 1px solid #d3d3d3;
+  color: #b1b1b1;
+}
+
+.formFotoMenu img {
+  width: 3em;
+}
+
+.formHarga p {
+  background-color: #28b0ff;
+  padding: 5px 20px;
+  margin: 0;
+  border-radius: 2px;
+  color: white;
+}
+
+.btn-simpan {
+  padding: 10px 50px;
+  color: white;
+  background-color: #4db652;
+}

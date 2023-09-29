@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  padding: 50px 100px;
+}
+
+.listProduk {
+  width: 70%;
+}
+
+.listProduks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}

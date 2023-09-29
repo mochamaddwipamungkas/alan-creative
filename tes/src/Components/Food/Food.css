@@ -1,0 +1,45 @@
+.food {
+  min-width: 1200px;
+  padding: 0 100px;
+}
+
+.food p {
+  margin: 0;
+  color: #808080;
+}
+.btn-TambahMenu {
+  width: fit-content;
+  padding: 5px 20px;
+  background-color: #28b0ff;
+  color: white;
+}
+
+.btn-TambahMenu:hover {
+  background-color: white;
+  color: #28b0ff;
+  border: 1px solid #28b0ff;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #ebebeb;
+}
+td,
+th {
+  border: 1px solid #f7f7f7;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+td img {
+  width: 100px;
+}
