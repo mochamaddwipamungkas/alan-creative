@@ -31,24 +31,13 @@
   padding: 20px 0;
   gap: 10px;
 }
-.item {
-  display: flex;
-  align-items: center;
+
+.item tr {
+  min-height: 500px;
 }
 
-.item p {
-  margin-left: 20px;
-  font-weight: 600;
-}
-
-.itemImg {
-  display: flex;
-  width: 100px;
-  align-items: center;
-}
-
-.itemImg img {
-  width: 100%;
+.item td {
+  border: none;
 }
 
 .btn {

@@ -1,6 +1,7 @@
 .card {
   width: 200px;
   box-shadow: 1px 1px 4px 1px rgb(212, 212, 212);
+  cursor: pointer;
 }
 
 .cardImg {
