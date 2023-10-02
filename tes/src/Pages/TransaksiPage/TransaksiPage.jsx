@@ -4,6 +4,7 @@ import Invoice from "../../Components/Invoice/Invoice";
 import "./TransaksiPage.css";
 import "../../Components/CardProduct/CardProduct.css";
 import getProducts from "../../services/product.service";
+import { Link } from "react-router-dom";
 
 const TransaksiPage = () => {
   const [products, setProducts] = useState([]);
@@ -25,9 +26,10 @@ const TransaksiPage = () => {
         return acc + product.price * item.qty;
       }, 0);
       setTotalPrice(sum);
+      localStorage.setItem("total", JSON.stringify(totalPrice));
       localStorage.setItem("cart", JSON.stringify(cart));
     }
-  }, [cart]);
+  }, [cart, totalPrice]);
 
   const handleAddProduct = (id) => {
     if (cart.find((item) => item.id === id)) {
@@ -43,8 +45,13 @@ const TransaksiPage = () => {
 
   const handleClearCart = () => {
     localStorage.removeItem("cart");
+    localStorage.removeItem("total");
     setCart([]);
     setTotalPrice(0);
+  };
+
+  const handlePrintBill = () => {
+    window.print();
   };
 
   return (
@@ -164,9 +171,10 @@ const TransaksiPage = () => {
                     </div>
                   </div>
                 </div>
-                <button href="" className="btn btn-saveBill">
+
+                <Link to="/printbill" className="btn btn-saveBill">
                   Print Bill
-                </button>
+                </Link>
               </div>
               <div style={{ display: "flex" }}>
                 <button href="" className="btn btn-charge">
